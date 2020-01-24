@@ -1,4 +1,4 @@
-/bin/sh
+!/bin/sh
 iptables -F
 iptables -A INPUT -i lo -p all -j ACCEPT
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
